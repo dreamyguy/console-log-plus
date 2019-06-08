@@ -1,0 +1,13 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# documentation
+/docs
+
+# dependencies
+/node_modules
+
+# misc
+.DS_Store
+
+# logs
+npm-debug.log*
