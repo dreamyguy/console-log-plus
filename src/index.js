@@ -1,3 +1,5 @@
+import validateColor from 'validate-color';
+
 const clp = ({type, prefix, message, background, color}) => {
   // Only do any of this if 'console.log' is supported
   if (typeof parent.window.console === 'object') {
@@ -48,8 +50,8 @@ const clp = ({type, prefix, message, background, color}) => {
     }
     if (theStyle === '') {
       // if 'theStyle' is still an empty string at this point, check for parameters
-      let theBackground = background ? background.toLowerCase() : '';
-      let theColor = color ? color.toLowerCase() : '';
+      let theBackground = background && validateColor(background) ? background.toLowerCase() : '';
+      let theColor = color && validateColor(color) ? color.toLowerCase() : '';
       theStyle = `background: ${theBackground ? theBackground : 'white'}; color: ${theColor ? theColor : 'black'}`;
     }
     const thePrefix = prefix ? `[${prefix}] ` : type ? `[${type}] ` : '';
