@@ -30,6 +30,11 @@ const clp = ({type, prefix, message, background, color}) => {
         color: 'black',
       },
       {
+        name: 'success',
+        background: '#bada55',
+        color: 'black',
+      },
+      {
         name: 'default',
         background: 'white',
         color: 'black',
