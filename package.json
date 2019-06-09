@@ -1,6 +1,6 @@
 {
   "name": "console-log-plus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bring meaningful prefixes and colors to your console log",
   "keywords": [
     "console.log",
