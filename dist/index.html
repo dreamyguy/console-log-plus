@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Console Log Plus</title>
+  </head>
+  <body>
+    <h1>Console Log Plus Demo 💬🌈😍</h1>
+    <h2>Open your inspector and look at your console!</h2>
+    <script src="index.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Scope all logic related to what you want to achieve by using a function
+        var waitForFunction = function() {
+          // Use a timeout id to identify your process and purge it when it's no longer needed
+          var timeoutID;
+          // Check if your function is defined, in this case by checking its type
+          if (typeof clp === 'function') {
+            // 'clp' is defined, invoke it with parameters, if any
+            // We no longer need to wait, purge the timeout id
+            window.clearTimeout(timeoutID);
+
+            // Custom prefixes, with types
+            clp({
+              type: 'ok',
+              prefix: 'Okay',
+              message: 'you bet'
+            });
+            clp({
+              type: 'error',
+              prefix: 'Ouch',
+              message: 'you bet'
+            });
+            clp({
+              type: 'warning',
+              prefix: 'I told you',
+              message: 'you bet'
+            });
+            clp({
+              type: 'attention',
+              prefix: 'Watch it!',
+              message: 'you bet'
+            });
+            clp({
+              type: 'success',
+              prefix: 'Awesome!',
+              message: 'you bet'
+            });
+            clp({
+              type: 'info',
+              prefix: 'FYI',
+              message: 'you bet'
+            });
+            clp({
+              type: 'default',
+              prefix: 'No fun',
+              message: 'you bet'
+            });
+            // No prefixes, with types
+            clp({
+              type: 'ok',
+              message: 'you bet'
+            });
+            clp({
+              type: 'error',
+              message: 'you bet'
+            });
+            clp({
+              type: 'warning',
+              message: 'you bet'
+            });
+            clp({
+              type: 'attention',
+              message: 'you bet'
+            });
+            clp({
+              type: 'success',
+              message: 'you bet'
+            });
+            clp({
+              type: 'info',
+              message: 'you bet'
+            });
+            clp({
+              type: 'default',
+              message: 'you bet'
+            });
+            // With prefixes, no types, custom colors
+            clp({
+              prefix: 'Okay',
+              color: 'yellow',
+              background: '#f012be',
+              message: 'you bet'
+            });
+            clp({
+              prefix: 'Ouch',
+              color: 'yellow',
+              background: '#b10dc9',
+              message: 'you bet'
+            });
+            clp({
+              prefix: 'I told you',
+              color: 'yellow',
+              background: '#85144b',
+              message: 'you bet'
+            });
+            clp({
+              prefix: 'Watch it!',
+              color: 'yellow',
+              background: '#89326f',
+              message: 'you bet'
+            });
+            clp({
+              prefix: 'Awesome!',
+              color: 'yellow',
+              background: 'green',
+              message: 'you bet'
+            });
+            clp({
+              prefix: 'FYI',
+              color: 'yellow',
+              background: '#ff4136',
+              message: 'you bet'
+            });
+            clp({
+              prefix: 'No fun',
+              color: 'yellow',
+              background: '#4d1e40',
+              message: 'you bet'
+            });
+            // No prefixes, no types, custom colors
+            clp({
+              color: 'yellow',
+              background: '#ff4136',
+              message: 'you bet'
+            });
+            clp({
+              color: 'yellow',
+              background: '#f012be',
+              message: 'you bet'
+            });
+            clp({
+              color: 'yellow',
+              background: '#b10dc9',
+              message: 'you bet'
+            });
+            clp({
+              color: 'yellow',
+              background: '#85144b',
+              message: 'you bet'
+            });
+            clp({
+              color: 'yellow',
+              background: 'green',
+              message: 'you bet'
+            });
+            clp({
+              color: 'yellow',
+              background: '#89326f',
+              message: 'you bet'
+            });
+            clp({
+              color: 'yellow',
+              background: '#4d1e40',
+              message: 'you bet'
+            });
+          } else {
+            // 'clp' is undefined, try again in 0.25 secs
+            timeoutID = window.setTimeout(waitForFunction, 250);
+          }
+        };
+        // Initialize
+        waitForFunction();
+      });
+    </script>
+  </body>
+</html>

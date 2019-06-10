@@ -1,6 +1,6 @@
 {
   "name": "console-log-plus",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Bring meaningful prefixes and colors to your console log",
   "keywords": [
     "console.log",
@@ -23,11 +23,13 @@
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
-    "build": "webpack"
+    "dev": "webpack-dev-server --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.js"
   },
   "devDependencies": {
     "webpack": "^4.33.0",
-    "webpack-cli": "^3.3.2"
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.7.0"
   },
   "dependencies": {
     "validate-color": "^1.0.0"

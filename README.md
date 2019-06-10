@@ -40,11 +40,6 @@ import clp from 'console-log-plus';
 
 ```javascript
 clp({
-  type: 'info',
-  prefix: 'FYI',
-  message: 'you bet'
-});
-clp({
   type: 'ok',
   prefix: 'Okay',
   message: 'you bet'
@@ -65,6 +60,16 @@ clp({
   message: 'you bet'
 });
 clp({
+  type: 'success',
+  prefix: 'Awesome!',
+  message: 'you bet'
+});
+clp({
+  type: 'info',
+  prefix: 'FYI',
+  message: 'you bet'
+});
+clp({
   type: 'default',
   prefix: 'No fun',
   message: 'you bet'
@@ -76,10 +81,6 @@ clp({
 ![Variation-2](https://raw.githubusercontent.com/dreamyguy/console-log-plus/master/docs/clp_no-prefixes-with-types.png "No prefixes, with types")
 
 ```javascript
-clp({
-  type: 'info',
-  message: 'you bet'
-});
 clp({
   type: 'ok',
   message: 'you bet'
@@ -97,6 +98,14 @@ clp({
   message: 'you bet'
 });
 clp({
+  type: 'success',
+  message: 'you bet'
+});
+clp({
+  type: 'info',
+  message: 'you bet'
+});
+clp({
   type: 'default',
   message: 'you bet'
 });
@@ -107,12 +116,6 @@ clp({
 ![Variation-3](https://raw.githubusercontent.com/dreamyguy/console-log-plus/master/docs/clp_with-prefixes-no-types-custom-colors.png "With prefixes, no types, custom colors")
 
 ```javascript
-clp({
-  prefix: 'FYI',
-  color: 'yellow',
-  background: '#ff4136',
-  message: 'you bet'
-});
 clp({
   prefix: 'Okay',
   color: 'yellow',
@@ -135,6 +138,18 @@ clp({
   prefix: 'Watch it!',
   color: 'yellow',
   background: '#89326f',
+  message: 'you bet'
+});
+clp({
+  prefix: 'Awesome!',
+  color: 'yellow',
+  background: 'green',
+  message: 'you bet'
+});
+clp({
+  prefix: 'FYI',
+  color: 'yellow',
+  background: '#ff4136',
   message: 'you bet'
 });
 clp({
@@ -172,6 +187,11 @@ clp({
 });
 clp({
   color: 'yellow',
+  background: 'green',
+  message: 'you bet'
+});
+clp({
+  color: 'yellow',
   background: '#89326f',
   message: 'you bet'
 });
@@ -189,6 +209,18 @@ clp({
 Clone this repo locally. You'll need to have [NodeJS][1] installed. Install all dependencies by running:
 
     npm i
+
+## Run it locally
+
+To start the app locally, run:
+
+    npm run dev
+
+This command fires up the application on port `9887`, making it visible on http://localhost:9887.
+
+Every time you make changes to [src/index.js][3], your page will refresh and reflect the changes.
+
+_This is only meant as a way to debug the function in the browser, and is only available in `development` mode_.
 
 ## Building for production
 

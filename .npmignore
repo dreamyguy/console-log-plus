@@ -3,6 +3,10 @@
 # documentation
 /docs
 
+# development mode
+/dist/index.html
+webpack.config.*
+
 # dependencies
 /node_modules
 

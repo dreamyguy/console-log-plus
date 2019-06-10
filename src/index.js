@@ -5,11 +5,6 @@ const clp = ({type, prefix, message, background, color}) => {
   if (typeof parent.window.console === 'object') {
     const clpTypes = [
       {
-        name: 'info',
-        background: '#abdcfb',
-        color: 'black',
-      },
-      {
         name: 'ok',
         background: 'purple',
         color: 'white',
@@ -32,6 +27,11 @@ const clp = ({type, prefix, message, background, color}) => {
       {
         name: 'success',
         background: '#bada55',
+        color: 'black',
+      },
+      {
+        name: 'info',
+        background: '#abdcfb',
         color: 'black',
       },
       {
