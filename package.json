@@ -1,6 +1,6 @@
 {
   "name": "console-log-plus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Bring meaningful prefixes and colors to your console log",
   "keywords": [
     "console.log",
@@ -32,7 +32,7 @@
     "webpack-dev-server": "^3.7.0"
   },
   "dependencies": {
-    "validate-color": "^1.0.0"
+    "validate-color": "^1.0.2"
   },
   "engines": {
     "node": ">=12.4.0"
