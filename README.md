@@ -230,6 +230,12 @@ When you're done with your changes, run:
 
 This command compiles the production-optimised `javascript` to `dist/index.js`, a file compiled out of [src/index.js][3].
 
+**Deploy to NPM**
+
+    npm run deploy
+
+> ⚠️ Make sure to bump version before releasing!
+
 ## Good to know
 
 ### License
